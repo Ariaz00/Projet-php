@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'HeroKing';
+    src: url(../font/Heroking-Regular.ttf) format('truetype');
+}
+
+body{
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+header{
+    font-family: 'HeroKing';
+    margin-bottom: 40px;
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    bottom: 72%;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color:#4060b8 ;
+}
+
+p{
+    font-size: 30px;
+    font-family: 'HeroKing';
+    color: white;
+}
+
+.container{
+    background-color: #add8e6;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 100px;
+    width: 70%;
+    height: 70%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.controls {
+    padding-top: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #4060b8;
+    color: white;
+    border: none;
+    font-family: 'HeroKing';
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.controls button:hover {
+    background-color: #29448a;
+    transform: scale(1.05);
+
+}
+
+.error-message-container {
+    position: relative; 
+    top: 20px; 
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
